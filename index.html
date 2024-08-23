@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Kennel App</title>
+</head>
+<body>
+  <h1>Pet Kennel App</h1>
+  <form action="index.html" id="petOwnerForm">
+    <label for="customerName">Name:</label>
+    <input type="text" id="customerName">
+    <br><br>
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone">
+    <br><br>
+    <label for="city">City:</label>
+    <input type="text" id="city">
+    <br><br>
+    <label for="zipCode">Zip Code:</label>
+    <input type="number" id="zipCode">
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <br><br>
+    <label for="petName">Pet Name:</label>
+    <input type="text" id="petName">
+    <br><br>
+    <label for="species">Species:</label>
+    <select name="species" id="species" form="petForm">
+      <option value="cat">Cat</option>
+      <option value="dog">Dog</option>
+      <option value="fish">Fish</option>
+    </select>
+    <br><br>
+    <button type="button" id="saveButton">Sign Up</button>
+  </form>
+  <div>
+    <p id="customerNameOutput"></p>
+    <p id="petNameOutput"></p>
+    <p id="speciesOutput"></p>
+  </div>
+  <br>
+  <script src="petOwnerFactory.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
