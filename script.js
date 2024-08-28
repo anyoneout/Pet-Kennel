@@ -1,6 +1,7 @@
-console.log("Hello World");
+/* proof of life: console.log "hello world" to make sure your script is connected. */
+/* console.log("Hello World"); */
 
-let state = {
+/* let state = {
   name: "",
   phone: "",
   city: "",
@@ -8,8 +9,9 @@ let state = {
   email: "",
   petName: "",
   species: "",
-};
+}; */
 
+console.table(state);
 let saveBtn = document.getElementById("saveButton");
 let nameInput = document.getElementById("customerName");
 let phoneInput = document.getElementById("phone");
@@ -38,11 +40,17 @@ function saveForm() {
   state.species = speciesInput.value;
   console.log("Added species " + state.species);
 
+  localStorage.setItem("customerName", state.name);
+  localStorage.setItem("city", state.city);
+  localStorage.setItem("species", state.species);
+
+
 
   console.table(state);
 
   let user = createPetOwner(state.name, state.petName, state.species);
   user.status();
+  user.render();
 }
 
 

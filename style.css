@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+  color: white;
+  border: solid, 1px, white;
+}
+
+div {
+  border: solid, 1px, white;
+}
+
+.container-md {
+  margin: auto;
+  text-align: center; 
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+

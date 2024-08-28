@@ -1,4 +1,5 @@
-console.log("hello world");
+/* proof of life: verify that this works with console.log. */
+/* console.log("hello world"); */
 
 function createPetOwner(customerName, petName, species) {
   let owner = {
@@ -21,8 +22,8 @@ function createPetOwner(customerName, petName, species) {
   return owner;
 
 }
-
-let owner1 = createPetOwner("chris", "tawook", "cat");
+/* proof of life: use console.log and the Console in Dev Tools to test this factory function. */
+let owner1 = createPetOwner("Chris", "Tawook", "cat");
 console.log(owner1);
 owner1.status();
 owner1.render();
